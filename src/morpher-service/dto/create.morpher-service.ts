@@ -4,5 +4,5 @@ export class createMorpherServiceDto {
     dat: string;
     vin: string;
     tvor: string;
-    predl: string;
+    predl: string
 }
