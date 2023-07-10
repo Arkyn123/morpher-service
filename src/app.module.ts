@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { MorpherServiceModule } from './morpher-service/morpher-service.module';
 import { morpherService } from './morpher-service/morpher-service.model';
+import { exceptionService } from './morpher-service/exception.model';
 
 @Module({
   imports: [
@@ -13,7 +14,7 @@ import { morpherService } from './morpher-service/morpher-service.model';
       password: 'root',
       database: 'morpher-service',
       autoLoadModels: true,
-      models: [morpherService],
+      models: [morpherService, exceptionService],
     }),
     MorpherServiceModule,
   ],
