@@ -1,4 +1,4 @@
-export class createMorpherServiceDto {
+export class CreateMorpherServiceDto {
     im: string;
     rod: string;
     dat: string;
